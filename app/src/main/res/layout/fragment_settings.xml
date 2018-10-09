@@ -1,14 +1,13 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minHeight="250dp"
     tools:context="com.example.madsfinnerup.tractrac.SettingsFragment">
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editSettingsName"
         android:layout_width="349dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -22,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/editSettingsUsername"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -31,10 +30,10 @@
         android:hint="Username"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/editSettingsName" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/editSettingsPassword"
         android:layout_width="352dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -43,40 +42,40 @@
         android:hint="Password"
         android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+        app:layout_constraintTop_toBottomOf="@+id/editSettingsUsername" />
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/switchNotifications"
         android:layout_width="0dp"
         android:layout_height="42dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
         android:background="@drawable/roundedcorners"
         android:text="   Notifications"
         android:textAlignment="textStart"
         android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonLogout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="38dp"
         android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
         android:background="@drawable/roundedcorners"
         android:elevation="0dp"
         android:text="Log out"
         android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/editSettingsMail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -87,6 +86,6 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+        app:layout_constraintTop_toBottomOf="@+id/editSettingsPassword" />
 
 </android.support.constraint.ConstraintLayout>

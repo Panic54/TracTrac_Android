@@ -8,4 +8,6 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="Settings">Settings</string>
+    <string name="events">Events</string>
+    <string name="clubs">Clubs</string>
 </resources>

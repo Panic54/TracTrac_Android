@@ -13,20 +13,22 @@ class NavigationActivity : AppCompatActivity() {
         when (item.itemId) {
             R.id.navigation_home -> {
 
-                ShowHomeFragment()
+                navigateHome()
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_dashboard -> {
+            R.id.navigation_events -> {
 
+                navigateEvents()
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_notifications -> {
+            R.id.navigation_clubs -> {
 
+                navigateClubs()
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_settings -> {
 
-                ShowSettingsFragment()
+                navigateSettings()
                 return@OnNavigationItemSelectedListener true
             }
         }
@@ -37,31 +39,46 @@ class NavigationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_navigation)
 
-        val fragmentHome = HomeFragment()
-        val transactionHome = manager.beginTransaction()
-
-        transactionHome.replace(R.id.fragment, fragmentHome)
-        transactionHome.addToBackStack(null)
-        transactionHome.commit()
-
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
+
+        navigateHome()
     }
 
-    fun ShowHomeFragment(){
-        val fragmentHome = HomeFragment()
-        val transactionHome = manager.beginTransaction()
+    fun navigateHome() {
+        val transaction = manager.beginTransaction()
+        val fragment = HomeFragment()
 
-        transactionHome.replace(R.id.fragment, fragmentHome)
-        transactionHome.addToBackStack(null)
-        transactionHome.commit()
+        transaction.replace(R.id.fragmentFrame, fragment)
+        transaction.addToBackStack(null)
+        transaction.commit()
     }
 
-    fun ShowSettingsFragment(){
-        val fragmentSettings = SettingsFragment()
-        val transactionHome = manager.beginTransaction()
+    fun navigateEvents() {
+        val transaction = manager.beginTransaction()
+        val fragment = EventsFragment()
 
-        transactionHome.replace(R.id.fragment, fragmentSettings)
-        transactionHome.addToBackStack(null)
-        transactionHome.commit()
+        transaction.replace(R.id.fragmentFrame, fragment)
+        transaction.addToBackStack(null)
+        transaction.commit()
+    }
+
+    fun navigateClubs() {
+        val transaction = manager.beginTransaction()
+        val fragment = ClubsFragment()
+
+        transaction.replace(R.id.fragmentFrame, fragment)
+        transaction.addToBackStack(null)
+        transaction.commit()
+    }
+
+
+
+    fun navigateSettings() {
+        val transaction = manager.beginTransaction()
+        val fragment = SettingsFragment()
+
+        transaction.replace(R.id.fragmentFrame, fragment)
+        transaction.addToBackStack(null)
+        transaction.commit()
     }
 }
