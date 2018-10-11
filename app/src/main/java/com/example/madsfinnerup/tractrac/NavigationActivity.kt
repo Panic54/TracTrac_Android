@@ -64,7 +64,7 @@ class NavigationActivity : AppCompatActivity() {
 
     fun navigateClubs() {
         val transaction = manager.beginTransaction()
-        val fragment = ClubsFragment()
+        val fragment = Clubs_Fragment()
 
         transaction.replace(R.id.fragmentFrame, fragment)
         transaction.addToBackStack(null)
@@ -75,7 +75,7 @@ class NavigationActivity : AppCompatActivity() {
 
     fun navigateSettings() {
         val transaction = manager.beginTransaction()
-        val fragment = SettingsFragment()
+        val fragment = Settings_Fragment()
 
         transaction.replace(R.id.fragmentFrame, fragment)
         transaction.addToBackStack(null)
