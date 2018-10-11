@@ -67,7 +67,7 @@ public class EventFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View inflaterview = inflater.inflate(R.layout.fragment_events, container, false);
+        View inflaterview = inflater.inflate(R.layout.fragment_event, container, false);
 
         ListView events = (ListView) inflaterview.findViewById(R.id.eventlist);
         return inflaterview;
