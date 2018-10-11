@@ -2,31 +2,33 @@ package com.example.madsfinnerup.tractrac
 
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
+import android.support.design.widget.BottomNavigationView.OnNavigationItemSelectedListener
 import android.support.v7.app.AppCompatActivity
+import com.example.madsfinnerup.tractrac.R.*
 import kotlinx.android.synthetic.main.activity_navigation.*
 
 class NavigationActivity : AppCompatActivity() {
 
     val manager = supportFragmentManager
 
-    private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
+    private val mOnNavigationItemSelectedListener = OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
-            R.id.navigation_home -> {
+            id.navigation_home -> {
 
                 navigateHome()
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_events -> {
+            id.navigation_events -> {
 
                 navigateEvents()
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_clubs -> {
+            id.navigation_clubs -> {
 
                 navigateClubs()
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_settings -> {
+            id.navigation_settings -> {
 
                 navigateSettings()
                 return@OnNavigationItemSelectedListener true
@@ -37,7 +39,7 @@ class NavigationActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_navigation)
+        setContentView(layout.activity_navigation)
 
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
 
@@ -48,7 +50,7 @@ class NavigationActivity : AppCompatActivity() {
         val transaction = manager.beginTransaction()
         val fragment = HomeFragment()
 
-        transaction.replace(R.id.fragmentFrame, fragment)
+        transaction.replace(id.fragmentFrame, fragment)
         transaction.addToBackStack(null)
         transaction.commit()
     }
@@ -57,16 +59,16 @@ class NavigationActivity : AppCompatActivity() {
         val transaction = manager.beginTransaction()
         val fragment = EventFragment()
 
-        transaction.replace(R.id.fragmentFrame, fragment)
+        transaction.replace(id.fragmentFrame, fragment)
         transaction.addToBackStack(null)
         transaction.commit()
     }
 
     fun navigateClubs() {
         val transaction = manager.beginTransaction()
-        val fragment = ClubsFragment()
+        val fragment = Clubs_Fragment()
 
-        transaction.replace(R.id.fragmentFrame, fragment)
+        transaction.replace(id.fragmentFrame, fragment)
         transaction.addToBackStack(null)
         transaction.commit()
     }
@@ -75,9 +77,9 @@ class NavigationActivity : AppCompatActivity() {
 
     fun navigateSettings() {
         val transaction = manager.beginTransaction()
-        val fragment = SettingsFragment()
+        val fragment = Settings_Fragment()
 
-        transaction.replace(R.id.fragmentFrame, fragment)
+        transaction.replace(id.fragmentFrame, fragment)
         transaction.addToBackStack(null)
         transaction.commit()
     }
