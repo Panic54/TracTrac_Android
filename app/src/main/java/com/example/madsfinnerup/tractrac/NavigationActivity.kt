@@ -55,7 +55,7 @@ class NavigationActivity : AppCompatActivity() {
 
     fun navigateEvents() {
         val transaction = manager.beginTransaction()
-        val fragment = EventsFragment()
+        val fragment = EventFragment()
 
         transaction.replace(R.id.fragmentFrame, fragment)
         transaction.addToBackStack(null)
