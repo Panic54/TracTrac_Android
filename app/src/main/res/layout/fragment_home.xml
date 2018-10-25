@@ -5,9 +5,32 @@
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Home fragment" />
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/events_near_you_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/events_near_you"
+                android:textColor="@android:color/white"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/colorPrimary"/>
+        </RelativeLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+    </LinearLayout>
 
 </FrameLayout>
