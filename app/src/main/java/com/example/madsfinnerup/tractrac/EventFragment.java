@@ -20,7 +20,7 @@ public class EventFragment extends Fragment {
                              Bundle savedInstanceState) {
         View inflaterview = inflater.inflate(R.layout.fragment_event, container, false);
 
-       // ListView events = (ListView) inflaterview.findViewById(R.id.eventlist);
+        ListView events = (ListView) inflaterview.findViewById(R.id.eventlist);
         return inflaterview;
     }
 
