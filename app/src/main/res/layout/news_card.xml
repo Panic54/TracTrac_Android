@@ -25,6 +25,7 @@
             android:src="@drawable/placeholder" />
 
         <TextView
+            android:id="@+id/news_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Big win for Denmark"/>
