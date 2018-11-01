@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:padding="14dp"
             android:divider="@android:color/transparent"
-            android:dividerHeight="14dp"></ListView>
+            android:dividerHeight="14dp"/>
 
     </LinearLayout>
 

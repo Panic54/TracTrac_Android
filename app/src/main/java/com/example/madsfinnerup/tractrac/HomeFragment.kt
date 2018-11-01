@@ -41,8 +41,8 @@ class HomeFragment : Fragment() {
     fun getData(): ArrayList<String> {
 
         val news_list : ArrayList<String> = arrayListOf()
-        news_list.add("Big win for Denmark")
-        news_list.add("Team Sky going for a win")
+        news_list.add("Big win for Denmark" + "," + R.drawable.volvo_ocean)
+        news_list.add("Team Sky going for a win" + "," + R.drawable.sky)
 
 
 

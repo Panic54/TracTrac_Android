@@ -38,6 +38,7 @@ class NewsAdapter(private val context: Context,
         val data = news.split(",")
 
         titleTextView.text = data[0]
+        imageView.setImageResource(data[1].toInt())
 
         return rowView
     }
