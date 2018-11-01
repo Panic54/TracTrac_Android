@@ -33,6 +33,11 @@ class NavigationActivity : AppCompatActivity() {
                 navigateSettings()
                 return@OnNavigationItemSelectedListener true
             }
+            id.navigation_search -> {
+
+                navigateSearch()
+                return@OnNavigationItemSelectedListener true
+            }
         }
         false
     }
@@ -73,11 +78,18 @@ class NavigationActivity : AppCompatActivity() {
         transaction.commit()
     }
 
-
-
     fun navigateSettings() {
         val transaction = manager.beginTransaction()
         val fragment = Settings_Fragment()
+
+        transaction.replace(id.fragmentFrame, fragment)
+        transaction.addToBackStack(null)
+        transaction.commit()
+    }
+
+    fun navigateSearch() {
+        val transaction = manager.beginTransaction()
+        val fragment = SearchFragment()
 
         transaction.replace(id.fragmentFrame, fragment)
         transaction.addToBackStack(null)

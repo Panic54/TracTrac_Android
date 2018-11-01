@@ -19,7 +19,7 @@ class HomeFragment : Fragment() {
                               savedInstanceState: Bundle?): View? {
 
         val view = inflater.inflate(R.layout.fragment_home, container, false)
-        listView = view.findViewById<ListView>(R.id.news_list_view)
+        listView = view.findViewById(R.id.news_list_view) as ListView
 
         val data = getData()
         val adapter = NewsAdapter(context, data)
@@ -42,13 +42,8 @@ class HomeFragment : Fragment() {
 
         val news_list : ArrayList<String> = arrayListOf()
         news_list.add("Big win for Denmark")
-        news_list.add("Americas Cup: Oracle joins")
-        news_list.add("Big win for Denmark")
-        news_list.add("Americas Cup: Oracle joins")
-        news_list.add("Big win for Denmark")
-        news_list.add("Americas Cup: Oracle joins")
-        news_list.add("Big win for Denmark")
-        news_list.add("Americas Cup: Oracle joins")
+        news_list.add("Team Sky going for a win")
+
 
 
         return news_list

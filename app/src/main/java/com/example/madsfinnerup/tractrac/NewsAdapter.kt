@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import android.widget.ImageView
 import android.widget.TextView
 
 class NewsAdapter(private val context: Context,
@@ -17,23 +18,26 @@ class NewsAdapter(private val context: Context,
         return dataSource.size
     }
 
-    override fun getItem(p0: Int): Any {
-        return dataSource[p0]
+    override fun getItem(i: Int): Any {
+        return dataSource[i]
     }
 
-    override fun getItemId(p0: Int): Long {
-        return p0.toLong()
+    override fun getItemId(i: Int): Long {
+        return i.toLong()
     }
 
-    override fun getView(p0: Int, p1: View?, p2: ViewGroup?): View {
-        val rowView = inflater.inflate(R.layout.news_card, p2, false)
+    override fun getView(i: Int, view: View?, viewGroup: ViewGroup?): View {
+        val rowView = inflater.inflate(R.layout.news_card, viewGroup, false)
 
         //Get title element
         val titleTextView = rowView.findViewById(R.id.news_title) as TextView
 
-        val news = getItem(p0) as String
+        val imageView = rowView.findViewById(R.id.iv_cover) as ImageView
 
-        titleTextView.text = news
+        val news = getItem(i) as String
+        val data = news.split(",")
+
+        titleTextView.text = data[0]
 
         return rowView
     }
