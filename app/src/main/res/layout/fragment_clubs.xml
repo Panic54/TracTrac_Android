@@ -40,13 +40,13 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:src="@drawable/abeamconsultingltd"
+                    android:src="@drawable/twentyfour"
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <TextView
-                    android:text="abeamconsultingltd"
+                    android:text="24"
                     android:textAlignment="center"
                     android:textColor="@android:color/holo_blue_dark"
                     android:textSize="18sp"
