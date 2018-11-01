@@ -32,7 +32,7 @@ class NewsAdapter(private val context: Context,
         //Get title element
         val titleTextView = rowView.findViewById(R.id.news_title) as TextView
 
-        val imageView = rowView.findViewById(R.id.iv_cover) as ImageView
+        val imageView = rowView.findViewById(R.id.news_cover) as ImageView
 
         val news = getItem(i) as String
         val data = news.split(",")
