@@ -88,11 +88,13 @@ class NavigationActivity : AppCompatActivity() {
     }
 
     fun navigateSearch() {
-        val transaction = manager.beginTransaction()
-        val fragment = SearchFragment()
+        //val transaction = manager.beginTransaction()
+        //val fragment = SearchFragment()
 
-        transaction.replace(id.fragmentFrame, fragment)
-        transaction.addToBackStack(null)
-        transaction.commit()
+       // transaction.replace(id.fragmentFrame, fragment)
+       // transaction.addToBackStack(null)
+      //  transaction.commit()
+
+        setContentView(R.layout.activity_search)
     }
 }

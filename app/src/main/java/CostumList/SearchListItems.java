@@ -1,19 +1,18 @@
 package CostumList;
 
+import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.widget.ImageView;
 
 public class SearchListItems {
 
-    public ImageView imageView;
+    public int imageView;
     public String eventName;
     public String event;
 
-    public ImageView getImageView() {
-        return imageView;
-    }
-
-    public void setImageView(ImageView imageView) {
+    public void setImageView(int imageView) {
         this.imageView = imageView;
+
     }
 
     public String getEventName() {
@@ -32,7 +31,7 @@ public class SearchListItems {
         this.event = event;
     }
 
-    public SearchListItems (ImageView imageView, String eventName, String event) {
+    public SearchListItems (int imageView, String eventName, String event) {
         this.imageView = imageView;
         this.eventName = eventName;
         this.event = event;
