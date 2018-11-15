@@ -1,4 +1,4 @@
-package com.example.madsfinnerup.tractrac
+package com.example.madsfinnerup.tractrac.home
 
 import android.content.Context
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ListView
+import com.example.madsfinnerup.tractrac.R
 import java.util.*
 
 class HomeFragment : Fragment() {
@@ -20,7 +21,7 @@ class HomeFragment : Fragment() {
         listView = view.findViewById(R.id.news_list_view) as ListView
 
         val data = getData()
-        val adapter = NewsAdapter(context, data)
+        val adapter = ModelAdapter(context, data)
 
         listView.adapter = adapter
 

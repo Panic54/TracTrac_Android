@@ -1,4 +1,4 @@
-package com.example.madsfinnerup.tractrac
+package com.example.madsfinnerup.tractrac.home
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,9 +7,10 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.madsfinnerup.tractrac.R
 
-class NewsAdapter(private val context: Context,
-                    private val dataSource: ArrayList<String>) : BaseAdapter() {
+class ModelAdapter(private val context: Context,
+                   private val dataSource: ArrayList<String>) : BaseAdapter() {
 
     private val inflater: LayoutInflater
             = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
@@ -27,7 +28,7 @@ class NewsAdapter(private val context: Context,
     }
 
     override fun getView(i: Int, view: View?, viewGroup: ViewGroup?): View {
-        val rowView = inflater.inflate(R.layout.news_card, viewGroup, false)
+        val rowView = inflater.inflate(R.layout.card_model, viewGroup, false)
 
         //Get title element
         val titleTextView = rowView.findViewById(R.id.news_title) as TextView

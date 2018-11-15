@@ -1,10 +1,10 @@
 package com.example.madsfinnerup.tractrac
 
 import android.os.Bundle
-import android.support.design.widget.BottomNavigationView
 import android.support.design.widget.BottomNavigationView.OnNavigationItemSelectedListener
 import android.support.v7.app.AppCompatActivity
 import com.example.madsfinnerup.tractrac.R.*
+import com.example.madsfinnerup.tractrac.home.HomeFragment
 import kotlinx.android.synthetic.main.activity_navigation.*
 
 class NavigationActivity : AppCompatActivity() {
