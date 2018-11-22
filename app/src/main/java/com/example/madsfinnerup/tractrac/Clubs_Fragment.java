@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 public class Clubs_Fragment extends Fragment {
 
-    int[] images = {R.drawable.french, R.drawable.swiss, R.drawable.ess, R.drawable.eurosail, R.drawable.redbull};
+    int[] images = {R.drawable.twentyfour, R.drawable.abeamconsultingltd, R.drawable.ast, R.drawable.boldhorizons, R.drawable.cya};
 
 
     @Override
@@ -47,8 +47,10 @@ public class Clubs_Fragment extends Fragment {
 
             view = getLayoutInflater().inflate(R.layout.custom_layout_clubs, null);
             ImageView clubsimageview = view.findViewById(R.id.clubsimage);
+            ImageView clubsimageviewtwo = view.findViewById(R.id.clubsimagetwo);
 
             clubsimageview.setImageResource(images[i]);
+            clubsimageviewtwo.setImageResource(images[i]);
             return view;
         }
     }
