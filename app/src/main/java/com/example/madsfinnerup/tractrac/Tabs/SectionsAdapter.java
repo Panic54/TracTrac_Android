@@ -1,4 +1,4 @@
-package com.example.madsfinnerup.tractrac.Tabs;
+package com.example.madsfinnerup.tractrac.tabs;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

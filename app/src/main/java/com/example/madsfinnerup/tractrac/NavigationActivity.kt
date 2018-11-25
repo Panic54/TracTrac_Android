@@ -1,15 +1,11 @@
 package com.example.madsfinnerup.tractrac
 
-import android.net.Uri
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView.OnNavigationItemSelectedListener
 import android.support.design.widget.NavigationView
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
 import com.example.madsfinnerup.tractrac.R.*
-import com.example.madsfinnerup.tractrac.Tabs.Clubs_tab
-import com.example.madsfinnerup.tractrac.Tabs.Events_tab
-import com.example.madsfinnerup.tractrac.Tabs.Relevant_tab
 import com.example.madsfinnerup.tractrac.home.HomeFragment
 import kotlinx.android.synthetic.main.activity_navigation.*
 

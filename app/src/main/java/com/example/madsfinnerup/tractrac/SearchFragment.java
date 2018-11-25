@@ -1,34 +1,22 @@
 package com.example.madsfinnerup.tractrac;
 
-import android.annotation.SuppressLint;
-import android.content.Context;
-import android.content.res.Resources;
-import android.graphics.drawable.Drawable;
-import android.media.Image;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.Debug;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
-import android.support.v4.content.res.ResourcesCompat;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.TableLayout;
 
-import com.example.madsfinnerup.tractrac.Tabs.Clubs_tab;
-import com.example.madsfinnerup.tractrac.Tabs.Events_tab;
-import com.example.madsfinnerup.tractrac.Tabs.Relevant_tab;
-import com.example.madsfinnerup.tractrac.Tabs.SectionsAdapter;
+import com.example.madsfinnerup.tractrac.tabs.Clubs_tab;
+import com.example.madsfinnerup.tractrac.tabs.Events_tab;
+import com.example.madsfinnerup.tractrac.tabs.Relevant_tab;
+import com.example.madsfinnerup.tractrac.tabs.SectionsAdapter;
 
 import java.util.ArrayList;
 
 import CostumList.SearchListItems;
-import CostumList.Search_ListAdapter;
 
 
 public class SearchFragment extends Fragment {
