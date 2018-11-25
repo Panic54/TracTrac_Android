@@ -8,10 +8,11 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class Clubs_Fragment extends Fragment {
 
-    int[] images = {R.drawable.twentyfour, R.drawable.ast, R.drawable.cya};
+    int[] images = {R.drawable.twentyfour, R.drawable.ast};
     int[] imagestwo = {R.drawable.abeamconsultingltd, R.drawable.boldhorizons};
 
 
@@ -51,7 +52,8 @@ public class Clubs_Fragment extends Fragment {
             ImageView clubsimageviewtwo = view.findViewById(R.id.clubsimagetwo);
 
             clubsimageview.setImageResource(images[i]);
-            clubsimageviewtwo.setImageResource(images[i]);
+            clubsimageviewtwo.setImageResource(imagestwo[i]);
+
             return view;
         }
     }
