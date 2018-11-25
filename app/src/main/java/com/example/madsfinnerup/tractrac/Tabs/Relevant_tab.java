@@ -16,7 +16,7 @@ import CostumList.SearchListItems;
 import CostumList.Search_ListAdapter;
 
 public class Relevant_tab extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
+
     private ListView listView;
     private ArrayList <SearchListItems> arrayList;
     SearchListItems searchListItems;
