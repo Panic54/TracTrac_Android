@@ -52,6 +52,7 @@ class NavigationActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(layout.activity_navigation)
+        setSupportActionBar(findViewById(R.id.tractrac_toolbar))
 
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
 
