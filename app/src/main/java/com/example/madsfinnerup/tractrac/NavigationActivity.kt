@@ -1,13 +1,24 @@
 package com.example.madsfinnerup.tractrac
 
+import android.net.Uri
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView.OnNavigationItemSelectedListener
+import android.support.design.widget.NavigationView
 import android.support.v7.app.AppCompatActivity
+import android.view.MenuItem
 import com.example.madsfinnerup.tractrac.R.*
+import com.example.madsfinnerup.tractrac.Tabs.Clubs_tab
+import com.example.madsfinnerup.tractrac.Tabs.Events_tab
+import com.example.madsfinnerup.tractrac.Tabs.Relevant_tab
 import com.example.madsfinnerup.tractrac.home.HomeFragment
 import kotlinx.android.synthetic.main.activity_navigation.*
 
-class NavigationActivity : AppCompatActivity() {
+class NavigationActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+
+
+    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
 
     val manager = supportFragmentManager
 
@@ -52,6 +63,9 @@ class NavigationActivity : AppCompatActivity() {
     }
 
     fun navigateHome() {
+        for (fragment in supportFragmentManager.fragments) {
+            supportFragmentManager.beginTransaction().remove(fragment).commit()
+        }
         val transaction = manager.beginTransaction()
         val fragment = HomeFragment()
 
@@ -61,6 +75,9 @@ class NavigationActivity : AppCompatActivity() {
     }
 
     fun navigateEvents() {
+        for (fragment in supportFragmentManager.fragments) {
+            supportFragmentManager.beginTransaction().remove(fragment).commit()
+        }
         val transaction = manager.beginTransaction()
         val fragment = EventFragment()
 
@@ -70,6 +87,9 @@ class NavigationActivity : AppCompatActivity() {
     }
 
     fun navigateClubs() {
+        for (fragment in supportFragmentManager.fragments) {
+            supportFragmentManager.beginTransaction().remove(fragment).commit()
+        }
         val transaction = manager.beginTransaction()
         val fragment = Clubs_Fragment()
 
@@ -79,6 +99,9 @@ class NavigationActivity : AppCompatActivity() {
     }
 
     fun navigateSettings() {
+        for (fragment in supportFragmentManager.fragments) {
+            supportFragmentManager.beginTransaction().remove(fragment).commit()
+        }
         val transaction = manager.beginTransaction()
         val fragment = Settings_Fragment()
 
@@ -88,13 +111,16 @@ class NavigationActivity : AppCompatActivity() {
     }
 
     fun navigateSearch() {
-        //val transaction = manager.beginTransaction()
-        //val fragment = SearchFragment()
+        for (fragment in supportFragmentManager.fragments) {
+            supportFragmentManager.beginTransaction().remove(fragment).commit()
+        }
+        val transaction = manager.beginTransaction()
+        val fragment = SearchFragment()
 
-       // transaction.replace(id.fragmentFrame, fragment)
-       // transaction.addToBackStack(null)
-      //  transaction.commit()
+        transaction.replace(id.fragmentFrame, fragment)
+        transaction.addToBackStack(null)
+        transaction.commit()
 
-        setContentView(R.layout.activity_search)
+      //  setContentView(R.layout.activity_search)
     }
 }
