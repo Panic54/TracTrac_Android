@@ -38,10 +38,10 @@ private ViewPager viewPager;
 
         sectionsAdapter = new SectionsAdapter(getFragmentManager());
 
-        viewPager = (ViewPager) inflaterview.findViewById(R.id.container);
+        viewPager = inflaterview.findViewById(R.id.container);
         setUpAdapter(viewPager);
 
-        TabLayout tabLayout = (TabLayout) inflaterview.findViewById(R.id.tabs);
+        TabLayout tabLayout = inflaterview.findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
 
         // if need it can be added again, but prob not gonna happen.
