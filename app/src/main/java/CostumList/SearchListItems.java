@@ -1,9 +1,5 @@
 package CostumList;
 
-import android.graphics.drawable.Drawable;
-import android.media.Image;
-import android.widget.ImageView;
-
 public class SearchListItems {
 
     public int imageView;
