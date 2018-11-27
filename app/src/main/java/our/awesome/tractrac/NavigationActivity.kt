@@ -1,13 +1,14 @@
-package com.example.madsfinnerup.tractrac
+package our.awesome.tractrac
 
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView.OnNavigationItemSelectedListener
 import android.support.design.widget.NavigationView
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
+import com.example.madsfinnerup.tractrac.R
 import com.example.madsfinnerup.tractrac.R.id
 import com.example.madsfinnerup.tractrac.R.layout
-import com.example.madsfinnerup.tractrac.home.HomeFragment
+import our.awesome.tractrac.home.HomeFragment
 import kotlinx.android.synthetic.main.activity_navigation.*
 
 class NavigationActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {

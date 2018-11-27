@@ -1,4 +1,4 @@
-package CostumList;
+package our.awesome.tractrac.CostumList;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

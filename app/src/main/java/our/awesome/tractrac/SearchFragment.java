@@ -1,4 +1,4 @@
-package com.example.madsfinnerup.tractrac;
+package our.awesome.tractrac;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -9,14 +9,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import com.example.madsfinnerup.tractrac.tabs.Clubs_tab;
-import com.example.madsfinnerup.tractrac.tabs.Events_tab;
-import com.example.madsfinnerup.tractrac.tabs.Relevant_tab;
-import com.example.madsfinnerup.tractrac.tabs.SectionsAdapter;
+import com.example.madsfinnerup.tractrac.R;
+
+import our.awesome.tractrac.tabs.Clubs_tab;
+import our.awesome.tractrac.tabs.Events_tab;
+import our.awesome.tractrac.tabs.Relevant_tab;
+import our.awesome.tractrac.tabs.SectionsAdapter;
 
 import java.util.ArrayList;
 
-import CostumList.SearchListItems;
+import our.awesome.tractrac.CostumList.SearchListItems;
 
 
 public class SearchFragment extends Fragment {

@@ -1,4 +1,4 @@
-package CostumList;
+package our.awesome.tractrac.CostumList;
 
 public class SearchListItems {
 

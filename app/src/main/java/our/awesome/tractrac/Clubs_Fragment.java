@@ -1,4 +1,4 @@
-package com.example.madsfinnerup.tractrac;
+package our.awesome.tractrac;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
+
+import com.example.madsfinnerup.tractrac.R;
 
 public class Clubs_Fragment extends Fragment {
 

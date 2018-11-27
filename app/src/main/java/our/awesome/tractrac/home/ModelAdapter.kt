@@ -1,4 +1,4 @@
-package com.example.madsfinnerup.tractrac.home
+package our.awesome.tractrac.home
 
 import android.content.Context
 import android.view.LayoutInflater

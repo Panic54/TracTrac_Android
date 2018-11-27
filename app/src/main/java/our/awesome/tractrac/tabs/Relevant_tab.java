@@ -1,4 +1,4 @@
-package com.example.madsfinnerup.tractrac.tabs;
+package our.awesome.tractrac.tabs;
 
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -12,12 +12,13 @@ import com.example.madsfinnerup.tractrac.R;
 
 import java.util.ArrayList;
 
-import CostumList.SearchListItems;
-import CostumList.Search_ListAdapter;
+import our.awesome.tractrac.CostumList.SearchListItems;
+import our.awesome.tractrac.CostumList.Search_ListAdapter;
 
-public class Events_tab extends Fragment {
+public class Relevant_tab extends Fragment {
+
     private ListView listView;
-    private ArrayList<SearchListItems> arrayList;
+    private ArrayList <SearchListItems> arrayList;
     SearchListItems searchListItems;
 
     @Override
@@ -25,9 +26,9 @@ public class Events_tab extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        View inflaterview = inflater.inflate(R.layout.fragment_events_tab, container, false);
+        View inflaterview = inflater.inflate(R.layout.fragment_relevant_tab, container, false);
 
-        listView = inflaterview.findViewById(R.id.EventsTabList);
+        listView = inflaterview.findViewById(R.id.RelevantTabList);
         setUpList();
 
         return inflaterview;
@@ -41,10 +42,10 @@ public class Events_tab extends Fragment {
         String mDrawableName = "ess";
         Resources res = getResources();
 
-        searchListItems = new SearchListItems(R.drawable.ess,"Events test","Events endny en test");
+        searchListItems = new SearchListItems(R.drawable.ess,"Relevant test","Relevant endny en test");
 
         arrayList.add(searchListItems);
-        searchListItems = new SearchListItems(R.drawable.eurosail,"Sailing","Events");
+        searchListItems = new SearchListItems(R.drawable.eurosail,"Sailing","Relevant");
 
         arrayList.add(searchListItems);
         Search_ListAdapter listAdapter = new Search_ListAdapter(getContext(),R.layout.costume_search_list,arrayList);

@@ -1,4 +1,4 @@
-package com.example.madsfinnerup.tractrac;
+package our.awesome.tractrac;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,6 +9,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.example.madsfinnerup.tractrac.R;
 
 
 public class EventFragment extends Fragment {
