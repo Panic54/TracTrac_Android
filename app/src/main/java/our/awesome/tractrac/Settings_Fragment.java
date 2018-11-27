@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.madsfinnerup.tractrac.R;
+import our.awesome.tractrac.R;
 
 public class Settings_Fragment extends Fragment {
 

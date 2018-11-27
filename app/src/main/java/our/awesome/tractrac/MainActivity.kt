@@ -2,7 +2,7 @@ package our.awesome.tractrac
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import com.example.madsfinnerup.tractrac.R
+import our.awesome.tractrac.R
 
 class MainActivity : AppCompatActivity() {
 

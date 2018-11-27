@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.example.madsfinnerup.tractrac.R;
+import our.awesome.tractrac.R;
 
 
 public class EventFragment extends Fragment {

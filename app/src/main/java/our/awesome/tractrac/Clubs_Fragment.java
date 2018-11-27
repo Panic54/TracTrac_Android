@@ -9,7 +9,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 
-import com.example.madsfinnerup.tractrac.R;
+import our.awesome.tractrac.R;
 
 public class Clubs_Fragment extends Fragment {
 

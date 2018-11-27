@@ -12,7 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.madsfinnerup.tractrac.R;
+import our.awesome.tractrac.R;
 
 public class SearchActivity extends AppCompatActivity {
 

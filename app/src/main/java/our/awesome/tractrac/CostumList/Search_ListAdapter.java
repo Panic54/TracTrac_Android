@@ -11,7 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.madsfinnerup.tractrac.R;
+import our.awesome.tractrac.R;
 
 import java.util.ArrayList;
 

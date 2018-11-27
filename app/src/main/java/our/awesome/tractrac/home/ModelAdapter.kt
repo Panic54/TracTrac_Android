@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
-import com.example.madsfinnerup.tractrac.R
+import our.awesome.tractrac.R
 
 class ModelAdapter(private val context: Context,
                    private val dataSource: ArrayList<String>) : BaseAdapter() {

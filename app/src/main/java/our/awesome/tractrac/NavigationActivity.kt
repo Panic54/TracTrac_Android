@@ -5,9 +5,9 @@ import android.support.design.widget.BottomNavigationView.OnNavigationItemSelect
 import android.support.design.widget.NavigationView
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
-import com.example.madsfinnerup.tractrac.R
-import com.example.madsfinnerup.tractrac.R.id
-import com.example.madsfinnerup.tractrac.R.layout
+import our.awesome.tractrac.R
+import our.awesome.tractrac.R.id
+import our.awesome.tractrac.R.layout
 import our.awesome.tractrac.home.HomeFragment
 import kotlinx.android.synthetic.main.activity_navigation.*
 
