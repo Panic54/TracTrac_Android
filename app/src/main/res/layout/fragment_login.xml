@@ -7,11 +7,12 @@
 
     <EditText
         android:id="@+id/emailAddress"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="77dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:background="@drawable/edittext_login"
         android:focusable="true"
         android:hint="Email Address"
         android:textColorHighlight="#ff7eff15"
@@ -19,11 +20,12 @@
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/edittext_login"
         android:focusable="true"
         android:hint="Password"
         android:textColorHighlight="#ff7eff15"
@@ -36,7 +38,10 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="188dp"
-        android:text="Login" />
+        android:text="Login"
+        android:background="@drawable/button_login"
+        android:backgroundTint="#015A84"
+        android:textColor="#ffffff" />
 
     <TextView
         android:id="@+id/forgotpassword"
@@ -46,6 +51,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="251dp"
         android:text="Forget your password?"
+        android:textColor="#019FC2"
         android:textSize="15sp" />
 
     <TextView
@@ -60,20 +66,24 @@
 
     <Button
         android:id="@+id/facebookbutton"
-        android:layout_width="wrap_content"
+        android:layout_width="175dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="195dp"
+        android:background="#39579A"
+        android:textColor="#ffffff"
         android:text="Login with Facebook" />
 
     <Button
         android:id="@+id/googlebutton"
-        android:layout_width="wrap_content"
+        android:layout_width="175dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="129dp"
+        android:background="#DF4A32"
+        android:textColor="#ffffff"
         android:text="Login with Google" />
 
     <TextView
@@ -84,6 +94,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="81dp"
         android:text="Get new account ... SIGN UP"
+        android:textColor="#019FC2"
         android:textSize="15sp" />
 
 </RelativeLayout>
