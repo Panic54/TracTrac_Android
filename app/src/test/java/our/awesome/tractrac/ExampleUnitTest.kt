@@ -1,4 +1,4 @@
-package com.example.madsfinnerup.tractrac
+package our.awesome.tractrac
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

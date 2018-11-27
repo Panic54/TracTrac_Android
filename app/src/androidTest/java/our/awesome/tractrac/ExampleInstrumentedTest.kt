@@ -1,4 +1,4 @@
-package com.example.madsfinnerup.tractrac
+package our.awesome.tractrac
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
